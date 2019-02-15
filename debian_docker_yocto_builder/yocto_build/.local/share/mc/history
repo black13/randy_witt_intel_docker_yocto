@@ -1,0 +1,11 @@
+[cmdline]
+0=
+
+[Dir Hist New Right Panel]
+0=/home/build/poky/build/tmp
+
+[Dir Hist New Left Panel]
+0=/home/build/poky/build/tmp/buildstats
+1=/home/build/poky/build/tmp
+2=/home/build/poky/build/tmp/work
+3=/home/build/poky/build/tmp/work/i586-poky-linux
