@@ -218,3 +218,13 @@ cd ~/poky-thud/
 mkdir /tmp/bbb
 ls
 exit
+ls
+cd bbb/
+ls
+cd /tmp/
+ls
+exit
+ls
+cd poky
+ls
+exit

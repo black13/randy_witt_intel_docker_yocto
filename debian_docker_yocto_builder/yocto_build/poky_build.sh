@@ -1,5 +1,6 @@
 #delete poky
 if [ -d ./poky-thud ]; then rm -Rvf ./poky-thud; fi
+if [ -d ~/bbb ]; then rm -Rvf ~/bbb; fi
 
 #build a basic image.
 git clone -b thud git://git.yoctoproject.org/poky.git poky-thud
@@ -18,7 +19,10 @@ cp /tmp/bbb/meta-bbb/conf/local.conf.sample /tmp/bbb/build/conf/local.conf
 cp /tmp/bbb/meta-bbb/conf/bblayers.conf.sample /tmp/bbb/build/conf/bblayers.conf
 
 cd ~/poky-thud
-source ./oe-init-build-env /tmp/bbb/build
-cd /tmp/bbb/build
-bitbake core-image-minimal
+
+source ./oe-init-build-env ~/bbb/build
+cd ~/bbb/build
+mkdir ~/tmp
+export TMPDIR=~/tmp
+#bitbake core-image-minimal
 
